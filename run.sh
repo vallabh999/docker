@@ -6,5 +6,5 @@ do
    docker rmi $images
 done
 docker build -t nginx .
-docker run -tid --name nginx -p 80:80 nginx:latest
+docker run -tid --name nginx -p 90:80 -p 9090:80 nginx:latest
 docker ps
